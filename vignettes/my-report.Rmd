@@ -1,0 +1,30 @@
+---
+title: "my report with other title"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-report}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(mysterycoffee)
+```
+
+Let's take a look at some people:
+```{r}
+example_names
+```
+
+Let's sort them into groups:
+```{r}
+make_groups(example_names)
+```
+
